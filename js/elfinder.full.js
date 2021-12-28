@@ -1238,7 +1238,7 @@ var elFinder = function(elm, opts, bootCallback) {
 					self.options.themes = Object.assign({
 						'default' : {
 							'name': 'default',
-							'cssurls': 'css/theme.css',
+							'cssurls': 'https://metalec.devnco.fr/vendors/elfinder/css/theme.css',
 							'author': 'elFinder Project',
 							'license': '3-clauses BSD'
 						}
@@ -10213,7 +10213,7 @@ elFinder.prototype = {
 	 * @return     {<type>}  The worker url.
 	 */
 	getWorkerUrl : function(filename) {
-		return this.convAbsUrl(this.workerBaseUrl + filename);
+		return this.convAbsUrl('/vendors/elfinder/js/worker/' + filename);
 	},
 
 	/**
